@@ -4,9 +4,24 @@
 }
 
 
+:root {
+  --Purple: #270257;
+  --Yellow: #feb100;
+  --Black: #000000;
+  --White: #ffffff;
+  --Nav-button: rgba(255, 255, 255, 0.05);
+  --Nav-hover: rgba(255, 255, 255, 0.1);
+}
+
+    
+html{
+    font-size: 62.5%;
+}
+
+
 body{
 
-    background-color: yellow;
+
     font-family: vazir, Arial, Helvetica, sans-serif;
 }
  
@@ -21,3 +36,45 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.navbar-item{
+    text-decoration: none;
+    color: var(--White);
+    background-color: var(--Nav-button);
+    margin: 0.5rem;
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    transition: 0.2s ease-in-out;
+}
+
+.navbar-item:hover {
+    background-color: var(--Nav-hover);
+    transform: translateY(0.2rem);
+
+}
+
+@media only screen and (max-width:600px){
+    .header{
+        background: url(../images/banner-mobile.png);
+        background-size: cover;
+    }
+
+    .navbar{
+        flex-direction: column;
+    }
+
+    .navbar-item{
+        width: max-content;
+    }
+}
+
+
+
+
+

@@ -16,6 +16,7 @@
     
 html{
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 
@@ -464,6 +465,15 @@ transition: 0.2s ease-in-out;
     .contact-us{
         margin-bottom: 2rem;
     }
+}
+
+.float{
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    background-color: var(--White);
+    border: solid var(--Purple);
+    border-radius: 50%;
 }
 
 
